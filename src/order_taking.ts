@@ -24,17 +24,13 @@ type Gizmo = {
 
 type ProductCode = Widget | Gizmo;
 
-type UnitQuantity = number;
+type UnitQuantity = number & { readonly brand: unique symbol };
 
-type Unit = UnitQuantity;
+type KilogramQuantity = number & { readonly brand: unique symbol };
 
-type KilogramQuantity = number;
-
-type Kilos = KilogramQuantity;
-
-// types are alias in TypeScript. So it's not possible to differenciate Unit or Kilos
-// eslint-disable-next-line @typescript-eslint/no-duplicate-type-constituents
-type OrderQuantity = Unit | Kilos;
+type OrderQuantity =
+  | UnitQuantity
+  | KilogramQuantity;
 
 type Price = undefined;
 
