@@ -1,9 +1,12 @@
 # Domain modeling made functional
 
+- `npm install --global yarn`
+- `yarn install`
+
 ## Commands
 
-- `npm build` to compile the typescript code to javascript
-- `npm run lint` to run the eslint.
-- `npm run lint:fix` to fix eslint errors.
-- `npm test` to run the jest tests.
-- `npm run dev` to build the project in watch mode for development
+- `yarn build` to compile the typescript code to javascript
+- `yarn run lint` to run the eslint.
+- `yarn run lint:fix` to fix eslint errors.
+- `yarn test` to run the jest tests.
+- `yarn run dev` to build the project in watch mode for development
