@@ -10,3 +10,7 @@
 - `yarn run lint:fix` to fix eslint errors.
 - `yarn test` to run the jest tests.
 - `yarn run dev` to build the project in watch mode for development
+
+## To investigate
+
+- how to define a simple types in TypeScript?
