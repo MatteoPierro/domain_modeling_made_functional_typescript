@@ -10,19 +10,13 @@ type BillingAddress = undefined;
 
 type OrderLineId = string;
 
-type WidgetCode = string;
+type WidgetCode = string & { readonly brand: unique symbol };
 
-type Widget = {
-  code: WidgetCode;
-};
+type GizmoCode = string & { readonly brand: unique symbol };
 
-type GizmoCode = string;
-
-type Gizmo = {
-  code: GizmoCode;
-};
-
-type ProductCode = Widget | Gizmo;
+type ProductCode =
+  | WidgetCode
+  | GizmoCode;
 
 type UnitQuantity = number & { readonly brand: unique symbol };
 
