@@ -1,27 +1,27 @@
-type OrderId = String
+type OrderId = string;
 
-type CustomerId = String
+type CustomerId = string;
 
-type CustomerInfo = undefined
+type CustomerInfo = undefined;
 
-type ShippingAddress = undefined
+type ShippingAddress = undefined;
 
-type BillingAddress = undefined
+type BillingAddress = undefined;
 
-type OrderLineId = String
+type OrderLineId = string;
 
 type OrderLine = {
-    id: OrderLineId
-}
+  id: OrderLineId;
+};
 
-type BillingAmount = undefined
+type BillingAmount = undefined;
 
 type Order = {
-    id: OrderId
-    customerId: CustomerId
-    customerInfo: CustomerInfo
-    shippingAddress: ShippingAddress
-    billingAddress: BillingAddress
-    orderLines: OrderLine[]
-    amountToBill: BillingAmount
-}
+  id: OrderId;
+  customerId: CustomerId;
+  customerInfo: CustomerInfo;
+  shippingAddress: ShippingAddress;
+  billingAddress: BillingAddress;
+  orderLines: OrderLine[];
+  amountToBill: BillingAmount;
+};
