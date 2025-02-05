@@ -8,7 +8,11 @@ type ShippingAddress = undefined
 
 type BillingAddress = undefined
 
-type OrderLine = undefined
+type OrderLineId = String
+
+type OrderLine = {
+    id: OrderLineId
+}
 
 type BillingAmount = undefined
 
